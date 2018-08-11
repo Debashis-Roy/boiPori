@@ -648,6 +648,9 @@ $(function() {
 })(jQuery, window, document);
 /*--End Boi Pori product left sidebar JS --*/
 
+$("#checkAll").click(function () {
+    $(".check").prop('checked', $(this).prop('checked'));
+});
 
 
 

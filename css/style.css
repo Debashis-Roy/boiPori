@@ -351,14 +351,22 @@ body {
     padding: 4px;
 }
 .userProfilePadding .userProfile img {
-    float: right;
+    float: left;
     margin-right: 0;
     max-height: 30px;
     //max-width: 50px;
 }
+.userProfilePadding .userProfile {
+    padding-right: 0px;
+}
+.userImagePart {
+    height: 150px;
+}
 .userProfilePaddingUserName {
-    padding-right: 15px;
+    float: right;
     font-weight: bold;
+    margin-top: 5px;
+    padding-right: 15px;
 
 }
 .userProfilePadding .navText > li > a {
@@ -375,8 +383,15 @@ body {
     padding: 0px;
     width: 100%;
 }
+.userApprovePart .table > thead > tr > th, .userApprovePart .table > tbody > tr > th, .userApprovePart .table > tfoot > tr > th, .userApprovePart .table > thead > tr > td, .userApprovePart .table > tbody > tr > td, .userApprovePart .table > tfoot > tr > td {
+    vertical-align: middle;
+}
 /*
 -------------------------------------------------*/
+.logInButtonArea {
+    float: right;
+    margin-top: 9px;
+}
 .logInButtonArea ul > li {
     display: inline-block;
     //margin-right: 15px;
@@ -4479,10 +4494,63 @@ ul.mail-list li span.mail-message-preview{
     border: 0px;
     padding: 0px;
 }
-.justify-content-center .card-body input, .reviewComment .form-control, .justify-content-center .card-body button, #rentBuy .btn-primary {
+.justify-content-center .card-body input, .reviewComment .form-control, .justify-content-center .card-body button, #rentBuy .btn-primary, .userApprovePart .btn-primary {
     border-radius: 0px;
 }
-.justify-content-center .card-body button, #rentBuy .btn-primary {
+.userApprovePart .table thead tr th:nth-last-child(1) {
+    text-align: center;
+}
+.userApprovePart .table tbody tr td:nth-child(1){
+    text-align: center;
+}
+.UserTopFlag {
+    position: absolute;
+}
+.UserTopValue {
+    float: left;
+
+}
+.UserTopFlag span::before, .UserTopValue span::before{
+    border-color: #f07c29 transparent transparent #f07c29;
+    border-style: solid;
+    border-width: 4.5px 3px;
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 0;
+}
+#checkboxStyle h3 {
+    float: left;
+    margin-right: 15px;
+    width: -moz-fit-content;
+}
+.UserTopFlag span, .UserTopValue span {
+    background: #f07c29 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 6px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100;
+}
+.UserTopFlag span::after, .UserTopValue span::after {
+    border-color: transparent transparent #f07c29 #f07c29;
+    border-style: solid;
+    border-width: 4.5px 3px;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: -6px;
+}
+.userApprovePart .table thead tr th:nth-child(1) {
+    width: 120px;
+    text-align: center;
+}
+.userApprovePart .table thead tr th:nth-child(2) {
+    width: 200px;
+}
+.justify-content-center .card-body button, #rentBuy .btn-primary, .userApprovePart .btn-primary {
     background-color: #f07c29;
     border-color: #f07c29;
     font-weight: bold;
@@ -4491,11 +4559,12 @@ ul.mail-list li span.mail-message-preview{
     float: right;
     margin-bottom: 6px;
 }
-#rentBuy .btn-primary:hover, #rentBuy .btn-primary:focus, #rentBuy .btn-primarya:active, .justify-content-center .card-body button:hover, .justify-content-center .card-body button:active, .justify-content-center .card-body button:focus{
+.userApprovePart .btn-primary:hover, .userApprovePart .btn-primary:focus, .userApprovePart .btn-primary:active, #rentBuy .btn-primary:hover, #rentBuy .btn-primary:focus, #rentBuy .btn-primarya:active, .justify-content-center .card-body button:hover, .justify-content-center .card-body button:active, .justify-content-center .card-body button:focus{
     background-color: #000;
     border-color: #000;
     transition: all 0.2s ease-in-out;
 }
+
 textarea {
     resize: vertical;
 }
@@ -7168,6 +7237,26 @@ ol, ul {
     }
 }
 
+@media (max-width: 414px){
+    .logInButtonArea ul li a, .account-area ul li a {
+        padding: 15px 4px;
+    }
+
+}
+@media (max-width: 750px){
+    .logInButtonArea {
+        margin-bottom: 9px;
+        margin-top: 0;
+        text-align: center;
+        float: none;
+    }
+    .userImagePart {
+        height: auto;
+    }
+    .UserTopFlag {
+        position: inherit;
+    }
+}
 @media (max-width: 768px) and (max-height: 1024px){
 
 }

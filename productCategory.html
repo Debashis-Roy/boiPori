@@ -50,11 +50,11 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="logInButtonArea" style="float: right;margin-top: 9px;">
+                            <div class="logInButtonArea">
                                 <ul>
                                     <li class="dropdown userProfilePadding">
                                         <a href="#" class="dropdown-toggle userProfile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <span class="userProfilePaddingUserName">Debashis Roy</span><img class="img-responsive img-circle" src="img/DRD.png" alt="userName" title="userName">
+                                            <img class="img-responsive img-circle" src="img/DRD.png" alt="userName" title="userName"><span class="userProfilePaddingUserName"> Debashis Roy</span>
                                         </a>
                                         <ul class="dropdown-menu navText dropdownMenu">
                                             <li><a href="User-profile.html">My Profile</a></li>
@@ -134,6 +134,7 @@
                                         <li class="active"><a href="productCategory.html">Product Category</a></li>
                                         <li><a href="productDetails.html">Product Details</a></li>
                                         <li><a href="rentBuy.html">Rent or Buy</a></li>
+                                        <li><a href="userApprove.html">User Approve</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -179,6 +180,7 @@
                                         <li><a href="productCategory.html">Product Category</a></li>
                                         <li><a href="productDetails.html">Product Details</a></li>
                                         <li><a href="rentBuy.html">Rent or Buy</a></li>
+                                        <li><a href="userApprove.html">User Approve</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -1140,52 +1142,144 @@
                 <!-- footer-bottom-end -->
             </footer>
             <!-- footer-area-end -->
-            <!-- Modal -->
-            <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-5 col-sm-5 col-xs-12">
-                                    <div class="modal-tab">
-                                        <div class="product-details-large tab-content">
-                                            <div class="tab-pane active" id="image-1">
-                                                <img src="img/product/quickview-l4.jpg" alt="" />
-                                            </div>
-                                            <div class="tab-pane" id="image-2">
-                                                <img src="img/product/quickview-l2.jpg" alt="" />
-                                            </div>
-                                            <div class="tab-pane" id="image-3">
-                                                <img src="img/product/quickview-l3.jpg" alt="" />
-                                            </div>
-                                            <div class="tab-pane" id="image-4">
-                                                <img src="img/product/quickview-l5.jpg" alt="" />
-                                            </div>
+<!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-4 col-xs-12">
+                                <div class="modal-tab">
+                                    <div class="product-details-large tab-content">
+                                        <div class="tab-pane active" id="image-1">
+                                            <img src="img/product/quickview-l4.jpg" alt="" />
                                         </div>
-                                        <div class="product-details-small quickview-active owl-carousel">
-                                            <a class="active" href="#image-1"><img src="img/product/quickview-s4.jpg" alt="" /></a>
-                                            <a href="#image-2"><img src="img/product/quickview-s2.jpg" alt="" /></a>
-                                            <a href="#image-3"><img src="img/product/quickview-s3.jpg" alt="" /></a>
-                                            <a href="#image-4"><img src="img/product/quickview-s5.jpg" alt="" /></a>
+                                        <div class="tab-pane" id="image-2">
+                                            <img src="img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                        <div class="tab-pane" id="image-3">
+                                            <img src="img/product/quickview-l3.jpg" alt="" />
+                                        </div>
+                                        <div class="tab-pane" id="image-4">
+                                            <img src="img/product/quickview-l5.jpg" alt="" />
                                         </div>
                                     </div>
+                                    <div class="product-details-small quickview-active owl-carousel">
+                                        <a class="active" href="#image-1"><img src="img/product/quickview-s4.jpg" alt="" /></a>
+                                        <a href="#image-2"><img src="img/product/quickview-s2.jpg" alt="" /></a>
+                                        <a href="#image-3"><img src="img/product/quickview-s3.jpg" alt="" /></a>
+                                        <a href="#image-4"><img src="img/product/quickview-s5.jpg" alt="" /></a>
+                                    </div>
                                 </div>
-                                <div class="col-md-7 col-sm-7 col-xs-12">
-                                    <div class="modal-pro-content">
-                                        <h3>Chaz Kangeroo Hoodie3</h3>
-                                        <div class="price">
-                                            <span>$70.00</span>
-                                        </div>
-                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p><br><br>
+                            </div>
+                            <div class="col-md-7 col-sm-8 col-xs-12">
+                                <div class="modal-pro-content">
+                                    <h3>Chaz Kangeroo Hoodie3</h3>
+                                    <div class="price">
+                                        <span>$70.00</span>
+                                    </div>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p><br><br>
 
-                                        <form action="#">
-                                            <input type="number" value="1" />
-                                            <button>Add to cart</button>
-                                        </form>
-                                        <span><i class="fa fa-check"></i> In stock</span>
+                                    <form action="#">
+                                        <input type="number" value="1" />
+                                        <button>Add to cart</button>
+                                    </form>
+                                    <span><i class="fa fa-check"></i> In stock</span>
+                                </div><br>
+                                <div id="rentBuy">	
+                                    <ul  class="nav nav-pills">
+                                        <li class="active purchase-option-tab">
+                                            <a  href="#rent" data-toggle="tab">
+                                                <div class="purchase-option-tab-container">
+                                                    <div class="tab-label">Rent</div>
+                                                    <div class="tab-subtext">From $13.49</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="purchase-option-tab">
+                                            <a href="#buy" data-toggle="tab">
+                                                <div class="purchase-option-tab-container">
+                                                    <div class="tab-label">Buy</div>
+                                                    <div class="tab-subtext">From $30.99</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="purchase-option-tab">
+                                            <a href="#free" data-toggle="tab">
+                                                <div class="purchase-option-tab-container">
+                                                    <div class="tab-label">Free</div>
+                                                    <div class="tab-subtext">Free for all</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content clearfix">
+                                        <div class="tab-pane active" id="rent">
+                                            <div class="row">
+                                                <div class="col-sm-12 purchase-options-content">
+                                                    <div class="purchase-option-block">
+                                                        <div class="purchase-option">
+                                                            <h1>Rent</h1>
+                                                            <div class="purchase-option-price" style="padding-right: 30px;">$13.49</div>
+                                                        </div>
+                                                        <div class="option-due-date">Due Dec  21, 2018</div>
+                                                        <div class="override-desc"></div>
+                                                    </div>
+
+                                                    <button class="btn btn-primary">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="buy">
+                                            <div class="row">
+                                                <div class="col-sm-12 purchase-options-content">
+                                                    <div class="purchase-option-block purchaseOptionBlock">
+                                                        <div class="custom-radios">
+                                                            <div class="radioLabelTextHover">
+                                                                <input type="radio" id="color-1" name="color" value="color-1" checked>
+                                                                <label for="color-1" class="radioLabelTextHover">
+                                                                    <span>
+                                                                    </span>
+                                                                    <p class="radioLabelText"> Buy used<i> $34.99</i> </p>
+                                                                </label>
+                                                            </div><br>
+
+                                                            <div class="radioLabelTextHover">
+                                                                <input type="radio" id="color-2" name="color" value="color-2">
+                                                                <label for="color-2" class="radioLabelTextHover">
+                                                                    <span>
+                                                                    </span>
+                                                                    <p class="radioLabelText"> Buy new<i> $40.99</i> </p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="option-due-date">Due Dec  21, 2018</div>
+                                                        <div class="override-desc"></div>
+                                                    </div>
+
+                                                    <button class="btn btn-primary">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="free">
+                                            <div class="row">
+                                                <div class="col-sm-12 purchase-options-content">
+                                                    <div class="purchase-option-block">
+                                                        <div class="purchase-option">
+                                                            <h1>Take it free</h1>
+                                                            <!--<div class="purchase-option-price" style="padding-right: 30px;">$13.49</div>-->
+                                                        </div>
+                                                        <div class="option-due-date">Due Dec  21, 2018</div>
+                                                        <div class="override-desc"></div>
+                                                    </div>
+
+                                                    <button class="btn btn-primary">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1193,7 +1287,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal end -->
+        </div>
+        <!-- Modal end -->
 
 
             <!-- all js here -->
