@@ -761,8 +761,8 @@ body {
 .main-menu-area {
     background: #292928;
 }
-.main-menu-area.sticky {
-    background: rgba(0, 0, 0, 0.48) none repeat scroll 0 0;
+.main-menu-area.sticky, .mobile-menu-area.sticky {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
 }
 .main-menu-area.sticky-header-1.sticky:hover {
     background: rgba(0, 0, 0, 1) none repeat scroll 0 0;
@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu-area ul li .sub-menu-2 {
     width: 170px;
 }
-.main-menu-area.sticky {
+.main-menu-area.sticky, .mobile-menu-area.sticky {
     left: 0;
     position: fixed;
     top: 0;
@@ -3624,7 +3624,7 @@ nav.menu .cr-dropdown ul {
 .home-6 .main-menu-area {
     background: #fff none repeat scroll 0 0;
 }
-.home-6 .main-menu-area.sticky {
+.home-6 .main-menu-area.sticky, .mobile-menu-area.sticky {
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
 }
 .home-6 .menu-area ul li:hover > a,
@@ -4532,7 +4532,7 @@ ul.mail-list li span.mail-message-preview{
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    z-index: 100;
+    z-index: 1;
 }
 .UserTopFlag span::after, .UserTopValue span::after {
     border-color: transparent transparent #f07c29 #f07c29;
