@@ -4534,6 +4534,9 @@ ul.mail-list li span.mail-message-preview{
     text-transform: uppercase;
     z-index: 1;
 }
+.modal-backdrop {
+    position: relative;
+}
 .UserTopFlag span::after, .UserTopValue span::after {
     border-color: transparent transparent #f07c29 #f07c29;
     border-style: solid;
