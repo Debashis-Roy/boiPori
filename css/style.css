@@ -6898,6 +6898,9 @@ p.lost-password a:hover {
     top: 6px;
     left: 0;
 }
+.navSideMenuBoiPori .nav .nav > li a {
+    padding: 2px 15px;
+}
 .navSideMenuBoiPori .nav-second-level {
     background-color: #fff;
     transition: all 0.3s ease-in-out;
