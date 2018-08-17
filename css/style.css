@@ -5315,6 +5315,14 @@ textarea {
     display: inline-block;
     float: left;
 }
+.contactForm #textAreaPart {
+    height: 100px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.contactForm #textAreaPart:active, .contactForm #textAreaPart:focus {
+    height: 150px;
+    transition: all 0.2s ease-in-out 0s;
+}
 .single-register-3 label {
     display: inline-block;
     float: left;
@@ -5355,7 +5363,62 @@ textarea {
 /*----------------------------------------*/
 /*  24. Contact
 /*----------------------------------------*/
-
+.fName {
+    padding-right: 8px;
+    padding-left: 0;
+}
+.lName {
+    padding-left: 8px;
+    padding-right: 0;
+}
+.contactForm .form-control {
+    border-radius: 0;
+    height: 45px;
+    font-size: 16px;
+}
+.contactForm {
+    padding: 30px;
+}
+.bRZero {
+    border-radius: 0;
+}
+.btnStyle {
+    background-color: #f07c29;
+    border-color: #f07c29;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 10px 30px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.btnStyle:hover, .btnStyle:active, .btnStyle:focus{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    transition: all 0.4s ease-in-out 0s;
+}
+.contactUsTitle {
+    text-align: center;
+    //border-bottom: 2px dotted #000;
+}
+.contactInformation {
+    padding-top: 30px;
+}
+.companyName {
+    font-size: 24px;
+    font-weight: bold;
+}
+.contactUsTitle{
+    background: rgba(0, 0, 0, 0) url("../img/headerBG.png") repeat-x scroll left bottom;
+     clear: both;
+    color: #929292;
+    font-size: 30px;
+    font-weight: normal;
+    height: 35px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    padding: 0 0 5px;
+}
 .contact-area,
 .map-area {
     overflow: hidden;
@@ -7232,6 +7295,26 @@ ol, ul {
 }
 .login-register-form1 .modal-content .registrationForm1.active {
     border-left: 1px solid #ddd;
+}
+
+
+/* FAQ
+---------------------------------------------------*/
+.FAQmainContent {
+    margin: 30px;
+}
+.FAQquestion {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    //margin-bottom: 15px;
+}
+.FAQanswer {
+    font-size: 16px;
+    //margin-bottom: 30px;
+}
+.faqA {
+    font-weight: bold;
 }
 /* End Rent or Buy css Part
 --------------------------------------------------*/
