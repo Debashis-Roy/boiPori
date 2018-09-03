@@ -6753,6 +6753,9 @@ p.lost-password a:hover {
     background-color: #f6f6f6;
     padding-bottom: 60px;
 }
+#testimonialMainPart {
+    background-color: #fff;
+}
 .testimonialMainPart .media-body {
     width: auto;
 }
@@ -6762,7 +6765,7 @@ p.lost-password a:hover {
 .testimonialMainPart .carousel .item {
     color: #999;
     overflow: hidden;
-    min-height: 120px;
+    min-height: 70px;
 }
 .testimonialMainPart .carousel .media {
     position: relative;
@@ -6866,8 +6869,93 @@ p.lost-password a:hover {
 
 
 
+/*----------------------------------------*/
+/*  31 TOPPER USER
+/*----------------------------------------*/
+.topperUser {
+    min-height: 65px;
+}
+.topperUser .topperUserImg {
+    width: 70px;
+    float: left;
+}
+.topperUser .topperUserImg img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.topperUser .topperUserName {
+    padding-top: 18px;
+}
+.topReaderText {
+    width:100%;
+    color:#313131;
+    text-align: center;
+    font-size:24px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation:colorchange 20s infinite alternate;
 
 
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+
+        color: #f07c29;
+    }
+
+    10% {
+
+        color: #8e44ad;
+    }
+
+    20% {
+
+        color: #1abc9c;
+    }
+
+    30% {
+
+        color: #d35400;
+    }
+
+    40% {
+
+        color: #f07c29;
+    }
+
+    50% {
+
+        color: #34495e;
+    }
+
+    60% {
+
+        color: #f07c29;
+    }
+
+    70% {
+
+        color: #2980b9;
+    }
+    80% {
+
+        color: #f1c40f;
+    }
+
+    90% {
+
+        color: #2980b9;
+    }
+
+    100% {
+
+        color: pink;
+    }
+}
 /* Slider Part
 -----------------------------*/
 .slider-area {
