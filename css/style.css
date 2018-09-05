@@ -2403,16 +2403,17 @@ footer {
 }
 .footer-contact p.adress span {
     display: block;
-    margin-bottom: 6px;
+    //margin-bottom: 6px;
 }
 .footer-contact .adress .logoName a {
     color: #f07c29;
+    font-size: 20px;
     font-weight: bold;
 }
 .footer-contact .adress .logoName a:hover,
 .footer-contact .adress .logoName a:active,
 .footer-contact .adress .logoName a:focus {
-    color: #fff;
+    color: #000;
 }
 
 /*----------------------------------------*/
