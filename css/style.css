@@ -818,6 +818,10 @@ body {
 .menu-area ul li a i {
     padding-left: 10px;
 }
+.mega-menu-full ul li a i {
+    padding-left: 0px;
+    padding-right: 10px;
+}
 .menu-area ul li:before,
 .safe-area:before {
     background: #f07c29 none repeat scroll 0 0;
@@ -931,18 +935,21 @@ h1, h2, h3, h4, h5, h6 {
 .menu-area ul li .mega-menu {
     background: #fff none repeat scroll 0 0;
     box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    height: 500px;
+    margin-left: -200px;
+    opacity: 0;
     padding: 30px 20px;
     position: absolute;
-    z-index: 6;
-    width: 910px;
-    opacity: 0;
     transform: scaleY(0);
     transform-origin: 0 0 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out 0s;
     visibility: hidden;
-    height: 500px;
+    width: 1150px;
+    z-index: 6;
 }
-
+.mega-menu.mega-menu-full .col-sm-3 {
+    padding-right: 0px;
+}
 .menu-area ul li:hover .mega-menu {
     opacity: 1;
     visibility: visible;
@@ -2232,7 +2239,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #F6F6F6;
 }
 .section-title-3 h3 {
-    color: #fff;
+    color: #333;
     display: block;
     font-size: 18px;
     margin-bottom: 30px;
@@ -2288,9 +2295,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
 }
 .link-follow ul li a {
-    background: #fff none repeat scroll 0 0;
+    background: #333;
     border-radius: 100%;
-    color: #333333;
+    color: #fff;
     font-size: 18px;
     display: inline-block;
     height: 52px;
@@ -2302,7 +2309,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-in-out;
 }
 .link-follow ul li a:hover {
-    background: #333333 none repeat scroll 0 0;
+    background: #f07c29;
     color: #fff;
 }
 
@@ -2311,7 +2318,8 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------------------------------*/
 
 footer {
-    background: #222222;
+    background: #fff;
+    border-top: 1px solid #ddd;
 }
 
 /*----------------------------------------*/
@@ -2342,7 +2350,7 @@ footer {
     display: none;
 }
 .footer-top-menu ul li a {
-    color: #fff;
+    color: #333;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -2352,7 +2360,7 @@ footer {
     font-weight: 400;
 }
 .bb-2 {
-    border-bottom: 2px solid #393939;
+    border-bottom: 2px solid #aaa;
 }
 
 /*----------------------------------------*/
@@ -2360,14 +2368,14 @@ footer {
 /*----------------------------------------*/
 
 .single-footer .footer-title h3 {
-    color: #ffffff;
+    color: #333;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase;
 }
 .footer-mid-menu ul li a {
-    color: #fff;
+    color: #333;
     display: block;
     font-weight: 400;
     text-decoration: none;
@@ -2383,7 +2391,7 @@ footer {
     border-right: 1px solid #393939;
 }
 .footer-contact p {
-    color: #fff;
+    color: #333;
     font-family: 'Rufina', serif;
     font-weight: 400;
 }
@@ -2416,14 +2424,14 @@ footer {
     padding: 30px 0;
 }
 .copy-right-area p {
-    color: #fff;
+    color: #333;
     margin-bottom: 0;
     margin-top: 8px;
     font-family: 'Rufina', serif;
     font-weight: 400;
 }
 .copy-right-area p a {
-    color: #fff;
+    color: #333;
 }
 .copy-right-area p a:hover {
     text-decoration: underline;
@@ -6760,7 +6768,7 @@ p.lost-password a:hover {
     width: auto;
 }
 .testimonialMainPart .carousel {
-    margin: 50px auto;
+    margin: 15px auto;
 }
 .testimonialMainPart .carousel .item {
     color: #999;
@@ -6875,19 +6883,29 @@ p.lost-password a:hover {
 .topperUser {
     min-height: 65px;
 }
-.topperUser .topperUserImg {
-    width: 70px;
+.col-sm-2point4 {
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+    position: relative;
     float: left;
 }
+.topperUser .topperUserImg {
+    //width: 70px;
+    //float: left;
+}
 .topperUser .topperUserImg img {
-    height: 60px;
-    width: 60px;
-    float: left;
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+    //float: left;
     border: 4px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .topperUser .topperUserName {
     padding-top: 18px;
+    text-align: center;
 }
 .topReaderText {
     width:100%;
@@ -6997,15 +7015,15 @@ p.lost-password a:hover {
 }
 .navigation-area .btn-wrapper a p {
     display: inline;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 0;
     width: 70%;
 }
 .navigation-area .btn-wrapper a p span {
     color: #666;
     display: block;
-    font-size: 76%;
-    transition: all 0.3s ease-in-out;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out 0s;
 }
 .navigation-area .btn-wrapper a i {
     float: right;
@@ -7183,8 +7201,12 @@ p.lost-password a:hover {
     position: relative;
     transition: all 0.3s ease-in-out 0s;
 }
-.navSideMenuBoiPori .nav .nav > li a:before, .menu-area ul li .mega-menu span a:before {
-    content: "\f105";
+.navSideMenuBoiPori .nav .nav > li a, .menu-area ul li .mega-menu span a, .subMenuIcon {
+    position: relative;
+}
+
+.navSideMenuBoiPori .nav .nav > li a::before, .menu-area ul li .mega-menu span a::before, .subMenuIcon::before {
+    content: "\f0da";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -7193,6 +7215,23 @@ p.lost-password a:hover {
     padding-right: 0.5em;
     //position: absolute;
     top: 6px;
+    left: 0;
+}
+.subMenuIcon {
+    position: relative;
+}
+
+.subMenuIcon:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
     left: 0;
 }
 .navSideMenuBoiPori .nav .nav > li a {
