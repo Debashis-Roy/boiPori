@@ -1,6 +1,8 @@
-
-/* google-font */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Rufina:400,700');
+@font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    src: url("//s.gr-assets.com/assets/lato/LatoLatin-Regular-1c0bbd257c304f0c439ffca5188bf64d.woff2") format("woff2"), url("//s.gr-assets.com/assets/lato/LatoLatin-Regular-e8832baa1215a9e9ea90b3f2ea38dc68.woff") format("woff"), url("//s.gr-assets.com/assets/lato/LatoLatin-Regular-08737475946c6f06ce49ff1ee56b9ea8.ttf") format("truetype");
+}
 
 html,
 body {
@@ -49,7 +51,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     color: #333;
     font-weight: 700;
 }
@@ -84,7 +86,7 @@ ul {
 }
 body {
     background-image: url("../img/mainbg.png");
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #666;
@@ -174,6 +176,9 @@ body {
 }
 .pt-50 {
     padding-top: 50px;
+}
+.pt-64 {
+    padding-top: 64px;
 }
 .pt-170 {
     padding-top: 170px;
@@ -437,7 +442,7 @@ body {
     font-size: 14px;
     text-decoration: none;
     text-transform: capitalize;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     transition: all 0.3s ease-in-out;
     vertical-align: middle;
     padding: 15px 20px;
@@ -670,7 +675,7 @@ body {
 }
 .header-mid-area .my-cart ul > li .cart-product .single-cart .cart-info h5 a {
     color: #666;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 17px;
@@ -683,7 +688,7 @@ body {
 }
 .cart-product .single-cart .cart-info p {
     margin-bottom: 0;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 15px;
 }
 .cart-totals {
@@ -694,7 +699,7 @@ body {
     display: block;
     font-size: 15px;
     font-weight: 400;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     margin: 0;
     text-transform: uppercase;
 }
@@ -727,7 +732,7 @@ body {
     text-transform: uppercase;
     width: 100%;
     transition: all 0.3s ease-in-out;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .home-3 .header-mid-area .my-cart ul > li .mini-cart-sub .cart-bottom a {
     color: #fff;
@@ -891,7 +896,7 @@ h1, h2, h3, h4, h5, h6 {
 .tab-content .box-heading span a {
     text-decoration:none;
     color: #929292;
-    font-family: Carme;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
@@ -949,6 +954,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mega-menu.mega-menu-full .col-sm-3 {
     padding-right: 0px;
+    padding-left: 0px;
 }
 .menu-area ul li:hover .mega-menu {
     opacity: 1;
@@ -965,8 +971,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-right: 20px;
 }
+.menu-area ul li .mega-menu-full span .mega-menu-single-catagory {
+    //float: right;
+}
 .menu-area ul li .mega-menu-full span ul li{
     //width: 22%;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.singleMegaMenuIcon {
+    float: left;
+}
+.singleMegaMenuText {
+    padding-left: 15px;
 }
 .menu-area ul li .mega-menu span a.title {
     border-bottom: 1px solid #e5e5e5;
@@ -982,7 +999,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     color: #777;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 20px;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -1091,7 +1108,7 @@ h1, h2, h3, h4, h5, h6 {
 .single-banner .banner-text {}
 .single-banner .banner-text h4 {
     color: #222;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 2px;
@@ -1168,6 +1185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-slider {
     position: relative;
+    height: 600px;
 }
 .slider-img img a img {
     width: 100%;
@@ -1178,7 +1196,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .slider-content h2 {
@@ -1188,7 +1206,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     margin-bottom: 25px;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .slider-content h3 {
@@ -1197,7 +1215,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1;
     text-transform: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .slider-content a {
@@ -1212,7 +1230,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 43px;
     padding: 10px 38px;
     text-transform: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     text-decoration: none;
     box-shadow: 2px 2px 2px 2px #a8c0ba;
@@ -1378,7 +1396,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     color: #333;
 }
 .tab-menu ul li {
@@ -1495,7 +1513,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .product-details h4 a:hover,
 .product-link .product-button a:hover,
@@ -1508,13 +1526,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #f07c29;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-style: italic;
 }
 .product-price ul li span {
     color: #666;
     padding-right: 5px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -1585,7 +1603,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     line-height: 30px;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
@@ -1641,7 +1659,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     font-weight: 400;
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .product-flag ul li > span.discount-percentage {
     background: #eeb900 none repeat scroll 0 0;
@@ -1789,7 +1807,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.1;
     text-align: right;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .bestseller-content p.categories {
@@ -1797,7 +1815,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
     text-align: right;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
 }
 .bestseller-content p.categories a {
@@ -1809,7 +1827,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-top: 35px;
     text-align: right;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     color: #333;
 }
 .bestseller-content .social-author {
@@ -1842,7 +1860,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 .single-bestseller .bestseller-text h3 {
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -1866,7 +1884,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .single-bestseller .bestseller-text .price ul li span {
     font-size: 15px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
     font-style: italic;
@@ -1980,7 +1998,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.3;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -2036,7 +2054,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .block-newsletter form input {
@@ -2100,7 +2118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .testimonial-text p {
     color: #fff;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -2171,7 +2189,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-content h3 a {
     color: #333;
     display: block;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 24px;
@@ -2183,7 +2201,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-content p {
     border-bottom: 1px solid #e5e5e5;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -2194,7 +2212,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-date-time {
     background: #fff none repeat scroll 0 0;
     display: block;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     height: 54px;
     left: 10px;
@@ -2207,7 +2225,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-date-time span {
     color: #333;
     display: block;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
@@ -2224,7 +2242,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-content span.meta-author {
     color: #333;
     display: inline-block;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
     line-height: 13px;
     margin-bottom: 20px;
@@ -2268,7 +2286,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .twitter-text p {
     color: #333;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 16px;
     line-height: 21px;
     margin: 0;
@@ -2276,7 +2294,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .twitter-text a {
     color: #f07c29;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 16px;
     font-style: italic;
     padding-top: 3px;
@@ -2381,7 +2399,7 @@ footer {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     line-height: 30px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .footer-mid-menu ul li a:hover {
@@ -2392,7 +2410,7 @@ footer {
 }
 .footer-contact p {
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .footer-contact p:last-child {
@@ -2428,7 +2446,7 @@ footer {
     color: #333;
     margin-bottom: 0;
     margin-top: 8px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .copy-right-area p a {
@@ -2561,7 +2579,7 @@ a#scrollUp:hover {
     top: 0;
     width: 214px;
     color: #a9a9a9;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .pos-search .bootstrap-select {
     -moz-appearance: none;
@@ -2596,7 +2614,7 @@ a#scrollUp:hover {
     padding-left: 233px;
     padding-right: 55px;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .header-bottom-area form a {
@@ -2678,7 +2696,7 @@ a#scrollUp:hover {
 .category-menu ul li a {
     color: #fff;
     display: block;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 36px;
@@ -2768,7 +2786,7 @@ a#scrollUp:hover {
     line-height: 60px;
     text-transform: capitalize;
     margin: 0;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .slider-content-3 p {
     margin: 38px 0 30px;
@@ -2781,7 +2799,7 @@ a#scrollUp:hover {
     margin-right: 10px;
     padding: 5px;
     vertical-align: top;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 }
 .slider-content-3 p span.sale2 {
     color: #f07c29;
@@ -2840,7 +2858,7 @@ a#scrollUp:hover {
     line-height: 1.15;
     text-transform: capitalize;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     transition: all 0.3s ease-in-out;
 }
 .deal-off-day h2 a:hover {
@@ -2867,7 +2885,7 @@ a#scrollUp:hover {
 .deal-off-day .sale-area .price-box span.new-sale {
     color: #f07c29;
     display: block;
-    font-family: Rufina;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 28px;
     font-weight: 400;
 }
@@ -2876,7 +2894,7 @@ a#scrollUp:hover {
     font-size: 18px;
     font-weight: 400;
     text-decoration: line-through;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .deal-off-day p {
@@ -3146,7 +3164,7 @@ a#scrollUp:hover {
     font-weight: 700;
     line-height: 1;
     text-transform: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     margin: 0 0 10px;
 }
@@ -3156,7 +3174,7 @@ a#scrollUp:hover {
     line-height: 1;
     margin-bottom: 20px;
     text-transform: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 700;
 }
 .home-4 .slider-content-4 a {
@@ -3171,7 +3189,7 @@ a#scrollUp:hover {
     padding: 10px 23px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .home-4 .slider-content-4 a:hover {
@@ -3213,7 +3231,7 @@ a#scrollUp:hover {
     color: #222;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     margin-bottom: 0;
     transition: all 0.3s ease-in-out;
@@ -3225,7 +3243,7 @@ a#scrollUp:hover {
 .single-banner-2 .single-text-2 p {
     color: #333;
     font-size: 14px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     margin-bottom: 0;
     transition: all 0.3s ease-in-out;
@@ -3728,7 +3746,7 @@ nav.menu .cr-dropdown ul {
     line-height: 30px;
     padding: 10px;
     width: 370px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 
@@ -3830,7 +3848,7 @@ nav.menu .cr-dropdown ul {
     font-size: 14px;
     color: #333;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     line-height: 2;
 }
@@ -3897,7 +3915,7 @@ nav.menu .cr-dropdown ul {
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .left-menu ul li a:hover {
@@ -3965,7 +3983,7 @@ nav.menu .cr-dropdown ul {
     font-weight: 900;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .left-title-2 p {
@@ -4054,7 +4072,7 @@ nav.menu .cr-dropdown ul {
     font-size: 16px;
     font-weight: 400;
     line-height: 35px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .toolbar-sorter .sorter-options {
@@ -4065,7 +4083,7 @@ nav.menu .cr-dropdown ul {
     height: 35px;
     min-width: 95px;
     padding: 0 5px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -4089,7 +4107,7 @@ nav.menu .cr-dropdown ul {
     margin-right: 0;
     min-width: 95px;
     padding: 0 5px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .control span {
@@ -4097,7 +4115,7 @@ nav.menu .cr-dropdown ul {
     font-size: 16px;
     font-weight: 400;
     line-height: 35px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .shop-main-area #th .row {
@@ -4455,7 +4473,7 @@ nav.menu .cr-dropdown ul {
     margin: 0px 0 9px;
     padding: 0;
     text-transform: capitalize;
-    //font-family: 'Rufina', serif;
+    //font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .prDetailMainLeft span {
@@ -4606,7 +4624,7 @@ textarea {
     font-weight: 400;
     margin-right: 15px;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     float: left;
     display: inline-block;
@@ -4619,7 +4637,7 @@ textarea {
     text-transform: uppercase;
 }
 .product-attribute span.value {
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .product-reviews-summary {
@@ -4657,7 +4675,7 @@ textarea {
     color: #f07c29;
     font-size: 25px;
     font-weight: 400;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .product-info-price .price-final span.old-price {
@@ -4749,7 +4767,7 @@ textarea {
     text-decoration: underline;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .blog-comment-readmore .blog-readmore a:hover {
@@ -4764,7 +4782,7 @@ textarea {
 .blog-comment-readmore .blog-com a {
     color: #333;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .youtube-video iframe {
@@ -4815,7 +4833,7 @@ textarea {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .side-form form {
@@ -4836,7 +4854,7 @@ textarea {
     height: 40px;
     padding-left: 10px;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     padding-right: 40px;
 }
@@ -4854,7 +4872,7 @@ textarea {
     text-decoration: none;
     font-size: 15px;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .blog-side-menu ul li a:hover,
@@ -4945,13 +4963,13 @@ textarea {
 }
 .author-destils .author-left .author-description p {
     margin: 0;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     color: #333;
     font-weight: 400;
 }
 .author-destils .author-left .author-description p a {
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .author-destils .author-left .author-description p a span {
@@ -4971,7 +4989,7 @@ textarea {
 }
 .author-destils .author-right span {
     color: #333;
-    font-family: Yanone Kaffeesatz;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
@@ -4989,7 +5007,7 @@ textarea {
 .author-destils .author-right ul li a {
     font-size: 16px;
     color: #333;
-    transition.3s;
+    transition:3s;
 }
 .author-destils .author-right ul li a:hover {
     color: #F07C29;
@@ -5001,7 +5019,7 @@ textarea {
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-blog-content .single-blog-title h3 a:hover {
@@ -5009,14 +5027,14 @@ textarea {
 }
 .single-blog-content .blog-single-content p {
     font-size: 16px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
 .single-blog-content .blog-single-content blockquote {
     background: rgba(102, 102, 102, 0.05) none repeat scroll 0 0;
     border-color: #F07C29;
-    font-family: Yanone Kaffeesatz;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 20px;
     font-style: italic;
     margin: 20px 0;
@@ -5211,7 +5229,7 @@ textarea {
     margin-bottom: 15px;
     padding-bottom: 10px;
     text-transform: capitalize;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 
@@ -5220,7 +5238,7 @@ textarea {
     font-weight: 400;
     margin: 0;
     line-height: 1.6em;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -5241,7 +5259,7 @@ textarea {
     font-weight: 400;
     margin-top: 7px;
     display: block;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .login-form .single-login input {
@@ -5249,7 +5267,7 @@ textarea {
     border: 1px solid #eceff8;
     padding: 12px 10px;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .login-form .single-login a {
@@ -5262,7 +5280,7 @@ textarea {
     text-decoration: none;
     float: left;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .login-form .single-login a:hover {
@@ -5278,7 +5296,7 @@ textarea {
 .single-login-2 span {
     float: left;
     margin-top: 10px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -5308,7 +5326,7 @@ textarea {
     font-size: 16px;
     font-weight: 400;
     margin-top: 7px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register form input {
@@ -5320,7 +5338,7 @@ textarea {
     height: 45px;
     padding-left: 10px;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register .chosen-select {
@@ -5333,7 +5351,7 @@ textarea {
     padding-left: 10px;
     box-shadow: none;
     text-align: left;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register input#billing_address_2 {
@@ -5357,14 +5375,14 @@ textarea {
     margin-top: 0;
     padding-left: 10px;
     font-size: 13px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register-3 label a {
     color: #F07C29;
     font-size: 14px;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register > a {
@@ -5378,7 +5396,7 @@ textarea {
     padding: 12px 48px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-register > a:hover {
@@ -5491,14 +5509,14 @@ textarea {
 }
 .contact-info ul li span {
     font-weight: 700;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     color: #333;
 }
 .contact-info ul li a {
     color: #333;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .contact-info ul li a:hover {
@@ -5516,7 +5534,7 @@ textarea {
     padding: 12px 10px;
     width: 100%;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 
@@ -5550,7 +5568,7 @@ textarea {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     width: 140px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .contact-form form .single-form-3 button:hover {
@@ -5585,14 +5603,14 @@ textarea {
     font-weight: 700;
     line-height: 21px;
     margin-bottom: 20px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .about-content h3 span,
 .single-misson h3 span {
     font-weight: 500;
     padding-left: 10px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .about-content p,
@@ -5600,7 +5618,7 @@ textarea {
     color: #4a4d4f;
     font-size: 15px;
     line-height: 25px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .about-content ul li {
@@ -5611,7 +5629,7 @@ textarea {
     color: #444;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .about-content ul li a:hover {
@@ -5629,13 +5647,13 @@ textarea {
     font-size: 40px;
     color: #444;
     font-weight: 600;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .single-counter span {
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .team-title h2 {
@@ -5646,7 +5664,7 @@ textarea {
 }
 .team-title h2 span {
     font-weight: 700;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .team-content {
@@ -5656,13 +5674,13 @@ textarea {
     font-size: 20px;
     margin: 0;
     font-weight: 500;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .team-content span {
     color: #666;
     display: block;
-    font-family: "Rufina",serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 15px;
     font-weight: 400;
     margin: 3px 0 0;
@@ -5717,7 +5735,7 @@ textarea {
     color: #fff;
     font-size: 20px;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .team-link ul li a:hover {
@@ -5728,7 +5746,7 @@ textarea {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 30px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .skill-content h3 span {
@@ -5740,7 +5758,7 @@ textarea {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 25px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .skill-content a {
@@ -5750,7 +5768,7 @@ textarea {
     display: inline-block;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .skill-content a:hover {
@@ -5777,7 +5795,7 @@ textarea {
     position: absolute;
     text-transform: uppercase;
     top: -28px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .progress .progress-bar {
@@ -5797,7 +5815,7 @@ textarea {
 .entry-header-title h2 {
     font-weight: 400;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .entry-header-area {
@@ -5807,7 +5825,7 @@ textarea {
     font-size: 20px;
     margin: 0;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .table-content table {
@@ -5844,7 +5862,7 @@ textarea {
     font-size: 13px;
     padding: 20px 10px;
     vertical-align: middle;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .table-content table td.product-thumbnail {
@@ -5856,7 +5874,7 @@ textarea {
     font-weight: 700;
     margin-left: 10px;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -5876,14 +5894,14 @@ textarea {
     height: 40px;
     padding: 0 5px 0 10px;
     width: 60px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .table-content table td.product-subtotal {
     font-size: 14px;
     font-weight: bold;
     width: 120px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .table-content table .product-price .amount {
@@ -5922,7 +5940,7 @@ textarea {
     text-shadow: none;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .buttons-cart ul li a:hover,
@@ -5942,8 +5960,8 @@ textarea {
 }
 .coupon p {
     font-size: 14px;
-    color: : #777;
-    font-family: 'Rufina', serif;
+    color: #777;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -5955,7 +5973,7 @@ textarea {
     max-width: 100%;
     padding: 0 0 0 10px;
     width: 170px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -5970,7 +5988,7 @@ textarea {
 .cart_totals h2 {
     border-bottom: 2px solid #333;
     display: inline-block;
-    font-family: "Rufina",serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 30px;
     font-weight: 400;
     margin: 0 0 35px;
@@ -5991,7 +6009,7 @@ textarea {
     text-transform: uppercase;
     vertical-align: top;
     color: #777;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     color: #333;
 }
@@ -6008,7 +6026,7 @@ textarea {
     margin-left: 5px;
     text-align: right;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .cart_totals table td ul#shipping_method {
@@ -6024,7 +6042,7 @@ textarea {
     width: 100%;
     color: #333;
     font-size: 13px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .cart_totals table td ul#shipping_method li input {
@@ -6034,7 +6052,7 @@ textarea {
 }
 .shipping a {
     color: #333;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 13px;
     font-weight: 400;
 }
@@ -6043,7 +6061,7 @@ textarea {
     font-size: 20px;
     text-transform: uppercase;
     white-space: nowrap;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .cart_totals table td {
@@ -6062,7 +6080,7 @@ textarea {
     margin-top: 20px;
     padding: 0 30px;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 
@@ -6082,7 +6100,7 @@ textarea {
     background-color: #f7f6f7;
     border-top: 3px solid #f07c29;
     color: #333;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
     font-weight: 400;
     list-style: outside none none;
@@ -6103,7 +6121,7 @@ textarea {
 .coupon-accordion span {
     color: #6f6f6f;
     cursor: pointer;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .coupon-accordion span:hover,
@@ -6130,14 +6148,14 @@ p.lost-password a:hover {
 .coupon-accordion span {
     color: #333;
     cursor: pointer;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .coupon-info p.form-row-first label span.required,
 .coupon-info p.form-row-last label span.required {
     color: #FF1111;
     font-weight: 700;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .coupon-info p.form-row-first input,
@@ -6148,7 +6166,7 @@ p.lost-password a:hover {
     max-width: 100%;
     padding: 0 0 0 10px;
     width: 370px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .buttons-cart input,
@@ -6172,7 +6190,7 @@ p.lost-password a:hover {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     white-space: nowrap;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .form-row > label {
@@ -6187,7 +6205,7 @@ p.lost-password {
 }
 p.lost-password a {
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .coupon-checkout-content {
@@ -6208,7 +6226,7 @@ p.checkout-coupon input[type="submit"] {
     margin-left: 6px;
     padding: 5px 10px;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .coupon-info p.form-row input[type="submit"]:hover,
@@ -6225,7 +6243,7 @@ p.lost-password a:hover {
     margin: 0 0 20px;
     padding-bottom: 10px;
     text-transform: uppercase;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .country-select {
@@ -6239,13 +6257,13 @@ p.lost-password a:hover {
     font-size: 14px;
     font-weight: 600;
     margin: 0 0 5px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .country-select label span.required,
 .checkout-form-list label span.required {
     color: #FF1111;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .country-select select {
@@ -6254,7 +6272,7 @@ p.lost-password a:hover {
     border: 1px solid #ddd;
     padding-left: 10px;
     font-size: 13px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .checkout-form-list {
@@ -6268,7 +6286,7 @@ p.lost-password a:hover {
     height: 42px;
     padding: 0 0 0 10px;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .checkout-form-list input::-moz-placeholder ,
@@ -6295,7 +6313,7 @@ p.lost-password a:hover {
 .create-account p {
     font-size: 13px;
     color: #777;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .ship-different-title label {
@@ -6320,7 +6338,7 @@ p.lost-password a:hover {
     text-transform: uppercase;
     width: 100%;
     color: #252525;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .your-order-table table {
@@ -6344,7 +6362,7 @@ p.lost-password a:hover {
     padding: 15px 0;
     text-align: center;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .your-order-table table .shipping ul li input {
@@ -6364,7 +6382,7 @@ p.lost-password a:hover {
 .your-order-table table tr.order-total td span {
     color: #ec4445;
     font-size: 20px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .panel-default > .panel-heading {
@@ -6394,7 +6412,7 @@ p.lost-password a:hover {
     text-transform: capitalize;
     margin-bottom: 10px;
     display: inline-block;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .payment-accordion .panel-body {
@@ -6405,7 +6423,7 @@ p.lost-password a:hover {
     font-size: 14px;
     margin-bottom: 0;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .payment-accordion .panel-title a img {
@@ -6443,7 +6461,7 @@ p.lost-password a:hover {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     width: 100%;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .your-order {
@@ -6458,7 +6476,7 @@ p.lost-password a:hover {
     color: #252525;
     font-size: 30px;
     font-weight: 300;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-table table {
@@ -6478,7 +6496,7 @@ p.lost-password a:hover {
     padding: 15px 10px;
     text-align: center;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-table table .product-remove {
@@ -6501,7 +6519,7 @@ p.lost-password a:hover {
 .wishlist-table table .product-remove > a {
     font-size: 25px;
     color: #333;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-table table .product-remove > a:hover {
@@ -6513,7 +6531,7 @@ p.lost-password a:hover {
 .product-name a {
     color: #333;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .product-name a:hover {
@@ -6536,7 +6554,7 @@ p.lost-password a:hover {
     padding: 10px 56px;
     text-transform: uppercase;
     width: 260px;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-table table .product-add-to-cart > a:hover {
@@ -6549,7 +6567,7 @@ p.lost-password a:hover {
     color: #252525;
     font-size: 18px;
     font-weight: 500;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-share ul li {
@@ -6561,7 +6579,7 @@ p.lost-password a:hover {
     font-size: 20px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
 }
 .wishlist-share ul li a:hover {
@@ -6579,7 +6597,7 @@ p.lost-password a:hover {
     color: #000;
     font-size: 24px;
     margin-bottom: 0;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     font-weight: 400;
 }
@@ -6595,7 +6613,7 @@ p.lost-password a:hover {
     padding: 10px 30px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    font-family: 'Rufina', serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-weight: 400;
     font-weight: 400;
 }
@@ -6617,7 +6635,7 @@ p.lost-password a:hover {
 }
 .modal-pro-content h3 {
     color: #333;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 50px;
     font-weight: 400;
     line-height: 1;
@@ -6629,7 +6647,7 @@ p.lost-password a:hover {
 }
 .modal-pro-content .price > span {
     color: #f07c29;
-    font-family: "Rufina", serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 28px;
     font-style: italic;
     font-weight: 600;
@@ -7490,7 +7508,7 @@ ol, ul {
 }
 .custom-radios input[type="radio"] + label {
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
     font-size: 14px;
 }
 .custom-radios input[type="radio"] + label span {
