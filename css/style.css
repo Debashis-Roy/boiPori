@@ -741,6 +741,14 @@ ul.BP-menu.l1 > .active{
 #lastCategory  .column ul li a:hover {
     color: #000;
 }
+#lastCategory {
+    width: max-content;
+    width: -moz-max-content;
+}
+#lastCategory  .column {
+    width: max-content;
+    width: -moz-max-content;
+}
 /* Modal Log In
 -------------------------------------------------*/
 .modal-header {
