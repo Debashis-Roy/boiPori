@@ -30,7 +30,8 @@ a:focus {
     outline: 0px solid
 }
 img {
-    height: auto;
+    max-width: 100%;
+    height: auto
 }
 .fix {
     overflow: hidden
@@ -460,11 +461,10 @@ ul.BP-menu.l1 > .active{
 
 
 .BP-menu .dropdown {
-    background: #fff none repeat scroll 0 0;
+    background: #fff;
     border-radius: 0 0 4px 4px;
-    border-top: 1px solid #eee;
-    //box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
-    margin-top: -1px;
+    border-top: 0 none;
+    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .BP-menu .more div.dropdown {}
@@ -570,7 +570,7 @@ ul.BP-menu.l1 > .active{
 
 .BP-menu .col1,
 .BP-menu .col2 {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #007f00;
 }
 
 .BP-menu .col4 {
@@ -704,17 +704,15 @@ ul.BP-menu.l1 > .active{
 }
 
 .BP-menu .dropdown ul li.parent:hover > .item {
-    background: #eee;
+    background: #f07c29 none repeat scroll 0 0;
     border-radius: 0;
-    color: #444;
 }
 
 .BP-menu .dropdown .grouped.parent:hover > .item {
-    background: #eee;
+    background: #f07c29 none repeat scroll 0 0;
     border-radius: 0;
     //box-shadow: 0 0 3px #030 inset;
     padding: 6px 10px;
-    color: #444;
 }
 
 .BP-menu .dropdown .modules:hover,
@@ -723,14 +721,11 @@ ul.BP-menu.l1 > .active{
 }
 
 .BP-menu .dropdown li:hover > .flyout {
-    background: #eee;
+    background: #f07c29 none repeat scroll 0 0;
     border-radius: 0;
     left: 100%;
     margin-left: -5px;
     top: 1px;
-}
-.header_wraper .BP-menu.l1 > li > .item {
-    font-size: 16px;
 }
 #lastCategory  .column ul li {
     padding-top: 3px;
@@ -739,12 +734,12 @@ ul.BP-menu.l1 > .active{
     
 }
 #lastCategory  .column ul li a {
-    color: #555;
+    color: #fff;
     padding-left: 15px;
     padding-right: 15px;
 }
 #lastCategory  .column ul li a:hover {
-    color: #f07c29;
+    color: #000;
 }
 #lastCategory {
     width: max-content;
